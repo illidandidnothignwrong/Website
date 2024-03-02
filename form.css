@@ -1,0 +1,111 @@
+.same-nav {
+    background-color: #0b3954; /* Dark blue background color */
+    padding: 20px;
+    top: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: gray;
+
+  
+}
+
+.same-nav  a {
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; /* Use a sleek font */
+    font-size: 16px;
+    margin-right: 20px; /* Add some spacing between links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.same-nav a:hover {
+    color: #3e5c76; /* Lighter blue color on hover */
+}
+
+/* Add a gradient border effect */
+.same-nav  {
+    position: relative;
+    overflow: hidden;
+}
+
+nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #00b4db, #0083b0); /* Gradient border colors */
+    z-index: -1;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+nav:hover::before {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+.Create-acc{
+    float: right;
+}
+body{
+    
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0b3954, #3e5c76);
+    
+}
+form {
+
+    max-width: 500px;
+    margin: 75px auto 0; /* Added margin-top of 50px */
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: black; /* Change label color to white */
+    font-family: sans-serif;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+form {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #ffffff, #d4d4d4);
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+}

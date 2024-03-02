@@ -1,0 +1,18 @@
+.texto-corpo {
+    font-family: 'Roboto', sans-serif; /* Use a modern sans-serif font */
+    font-size: 24px; /* Set the font size */
+    color: #ffffff; /* White text color */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Add letter spacing */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 400px
+    
+}
+.texto-corpo:hover {
+    color: #302e30a4; /* Change text color on hover */
+}
